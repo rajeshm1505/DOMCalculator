@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1 id="title"> DOM calculator
+      <p id="description" >
+       This is a sample DOM Calculator using the HTML and CSS
+    </p></h1>
+  
+  
+  
+<div class="container">
+  
+  <div class="calculator">
+    <form>
+      <input type="text" id="result" >
+      
+      <div>
+        <button type="button" id="clear" onclick="Clear()" onkeydown="handlekey(event)">C</button>
+        <button type="button" id="delete" onclick="del()" onkeydown="handlekey(event)">
+        <img src="https://cdn0.iconfinder.com/data/icons/ui-interface/512/__Arrow_back-512.png">
+        </button>
+        <button type="button" id="." onclick="display('.')" onkeydown="handlekey(event)">.</button>
+        <button type="button" id="multiply" onclick="display('*')" onkeydown="handlekey(event)" class="operator">X</button>
+      </div>
+
+      <div>
+        <button type="button" id="7" onclick="display('7')">7</button>
+        <button type="button" id="8" onclick="display('8')">8</button>
+        <button type="button" id="9" onclick="display('9')">9</button>
+        <button type="button" id="divide" onclick="display('/')" onkeydown="handlekey(event)" class="operator">/</button>
+      </div>
+
+      <div>
+        <button type="button" id="4" onclick="display('4')">4</button>
+        <button type="button" id="5" onclick="display('5')">5</button>
+        <button type="button" id="6" onclick="display('6')">6</button>
+        <button type="button" id="subtract" onclick="display('-')" onkeydown="handlekey(event)" class="operator" >-</button>
+      </div>
+
+      <div>
+        <button type="button" id="1" onclick="display('1')">1</button>
+        <button type="button" id="2" onclick="display('2')">2</button>
+        <button type="button" id="3" onclick="display('3')">3</button>
+        <button type="button" id="add" onclick="display('+')"  onkeydown="handlekey(event)" class="operator">+</button>
+      </div>
+
+      <div>
+        <button type="button" id="0">0</button>
+        <button type="button" id="double" onclick="display('00')">00</button>
+        <button type="button" id="equal" onclick="calculate()" onkeydown="handlekey(event)">=</button>
+      </div>
+    </form>
+    
+  </div>
+</div>
+  <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
